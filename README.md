@@ -2,6 +2,43 @@
 
 This document summarizes the current state of the MLX OpenCL backend, highlighting key features, implemented primitives, and the overall progress. The backend aims to provide a complete, high‑performance OpenCL implementation of MLX’s core operations, with a focus on portability and distributed training.
 ---
+
+Sept. 21 2026 
+
+	(base) jc@U1:~/Documents/mlx-opencl9415/mlx-opencl$ for i in 1 2 3 4 5; do
+	  mlx_lm.generate \
+	    --model "$MODEL" \
+	    --prompt "Explain parallel computing in GPUs." \
+	    --max-tokens 128 |
+	    grep -E 'Prompt:|Generation:|Peak memory:'
+	done
+	[OpenCL] Double precision support: NO (fallback to float)
+	[OpenCL] Half mode: PROMOTED (float compute, export MLX_OPENCL_NATIVE_HALF=0) on Intel(R) OpenCL Graphics
+	Prompt: 26 tokens, 108.015 tokens-per-sec
+	Generation: 91 tokens, 64.734 tokens-per-sec
+	Peak memory: 0.373 GB
+	[OpenCL] Double precision support: NO (fallback to float)
+	[OpenCL] Half mode: PROMOTED (float compute, export MLX_OPENCL_NATIVE_HALF=0) on Intel(R) OpenCL Graphics
+	Prompt: 26 tokens, 101.287 tokens-per-sec
+	Generation: 91 tokens, 65.078 tokens-per-sec
+	Peak memory: 0.373 GB
+	[OpenCL] Double precision support: NO (fallback to float)
+	[OpenCL] Half mode: PROMOTED (float compute, export MLX_OPENCL_NATIVE_HALF=0) on Intel(R) OpenCL Graphics
+	Prompt: 26 tokens, 104.231 tokens-per-sec
+	Generation: 91 tokens, 63.489 tokens-per-sec
+	Peak memory: 0.373 GB
+	[OpenCL] Double precision support: NO (fallback to float)
+	[OpenCL] Half mode: PROMOTED (float compute, export MLX_OPENCL_NATIVE_HALF=0) on Intel(R) OpenCL Graphics
+	Prompt: 26 tokens, 103.221 tokens-per-sec
+	Generation: 91 tokens, 64.193 tokens-per-sec
+	Peak memory: 0.373 GB
+	[OpenCL] Double precision support: NO (fallback to float)
+	[OpenCL] Half mode: PROMOTED (float compute, export MLX_OPENCL_NATIVE_HALF=0) on Intel(R) OpenCL Graphics
+	Prompt: 26 tokens, 104.241 tokens-per-sec
+	Generation: 91 tokens, 63.400 tokens-per-sec
+	Peak memory: 0.373 GB
+
+
 Sept. 15 midnight 2026 Many marker fixes and fused-kernel improvements
 
 	IMPORTANT: keep laptop plugged in and use the same power mode.
