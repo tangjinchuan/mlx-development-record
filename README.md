@@ -2,6 +2,14 @@
 
 This document summarizes the current state of the MLX OpenCL backend, highlighting key features, implemented primitives, and the overall progress. The backend aims to provide a complete, high‑performance OpenCL implementation of MLX’s core operations, with a focus on portability and distributed training.
 ---
+Oct. 3 2026
+
+	| Projection | OpenCL testing| Metal reference |
+	|---|---:|---:|
+	| Gate Q4 | 305.2 GB/s | 260.3 GB/s |
+	| GDN QKV Q4 | 275.5 GB/s | 236.2 GB/s |
+	| GDN Out Q5 | 280.2 GB/s | 233.9 GB/s |
+	| LM head Q4 | 352.5 GB/s | 342.8 GB/s |
 
 Sept. 21 2026 
 
