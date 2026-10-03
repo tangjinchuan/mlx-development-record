@@ -4,7 +4,7 @@ This document summarizes the current state of the MLX OpenCL backend, highlighti
 ---
 Oct. 3 2026
 
-    Apple Silicon M2 MAX 96GB
+    Apple Silicon M2 MAX 96GB QMV 
 
 	| Projection | OpenCL testing| Metal reference |
 	|---|---:|---:|
