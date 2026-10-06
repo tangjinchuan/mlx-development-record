@@ -4,15 +4,15 @@ This document summarizes the current state of the MLX OpenCL backend, highlighti
 ---
 Oct. 6 2026
 
-MLX-OpenCL Performance Freeze
------------------------------
-Correctness : official C++ tests PASS
-Decode      : Qwen3.8-27B-oQ4 ≈ 11 tok/s on M2 Max
-Apple Event : stable host-visible policy
-OpenCL      : 1.2 compatible
-
-Further micro-optimization:
-NO, unless expected end-to-end gain >= 10%
+	MLX-OpenCL Performance Freeze
+	-----------------------------
+	Correctness : official C++ tests PASS
+	Decode      : Qwen3.8-27B-oQ4 ≈ 11 tok/s on M2 Max
+	Apple Event : stable host-visible policy
+	OpenCL      : 1.2 compatible
+	
+	Further micro-optimization:
+	NO, unless expected end-to-end gain >= 10%
 
 Oct. 3 2026
 
