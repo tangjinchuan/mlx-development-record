@@ -18,9 +18,9 @@ Oct. 3 2026
 
     Apple Silicon M2 MAX 96GB QMV 
 
-	| Projection | OpenCL 1.2 testing| Metal SIMD-group reference |
-	|---|---:|---:|
-	| Gate Q4 | 305.2 GB/s | 260.3 GB/s |
+	| Projection | OpenCL 1.2 | Metal SIMD- |
+	|--- --- --- | testing ---| group reference |
+	| Gate Q4 	 | 305.2 GB/s | 260.3 GB/s |
 	| GDN QKV Q4 | 275.5 GB/s | 236.2 GB/s |
 	| GDN Out Q5 | 280.2 GB/s | 233.9 GB/s |
 	| LM head Q4 | 352.5 GB/s | 342.8 GB/s |
